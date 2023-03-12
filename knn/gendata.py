@@ -13,7 +13,7 @@ RESIZED_IMAGE_HEIGHT = 30
 
 ###################################################################################################
 def main():
-    imgTrainingNumbers = cv2.imread("test_image.jpg")            # read in training numbers image
+    imgTrainingNumbers = cv2.imread("lemon1.jpg")            # read in training numbers image
 
     if imgTrainingNumbers is None:                          # if image was not read successfully
         print ("error: image not read from file \n\n")        # print error message to std out

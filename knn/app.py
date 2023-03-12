@@ -44,8 +44,8 @@ class ContourWithData():
 
 while True:
     ret, img = cap.read()
-    npaClassifications = np.loadtxt("classification.txt", np.float32)
-    npaFlattenedImages = np.loadtxt("features.txt", np.float32)
+    npaClassifications = np.loadtxt("classify.txt", np.float32)
+    npaFlattenedImages = np.loadtxt("feat.txt", np.float32)
     npaClassifications = npaClassifications.reshape((npaClassifications.size, 1))
 
     kNearest = cv2.ml.KNearest_create()
